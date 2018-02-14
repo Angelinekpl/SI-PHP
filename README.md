@@ -1,9 +1,9 @@
 # SI-PHP : Projet Dev Learn
 
-##Description
+## Description
 Dev Learn est une application web de veille quotidenne. Chaque jour les articles sont mis à jour et sont classés par thème.
 
-##Définition
+## Définition
 Notre base de données SIFEV est composée de deux tables : Article et Categories.
 
   Article représente notre liste d'articles :
@@ -18,11 +18,11 @@ Notre base de données SIFEV est composée de deux tables : Article et Categorie
   * category_id
   * category_name
 
-##Sitemap
+## Sitemap
 
-##CRUD
+## CRUD
 
-###Create
+### Create
 
   * Formulaire
 
@@ -32,7 +32,7 @@ Notre base de données SIFEV est composée de deux tables : Article et Categorie
   ```sql
   INSERT INTO article(title, author, date, content, url) VALUES(:title, :author, :date, :content, :url));
   ```
-###Read
+### Read
 
   * Lister
   ```sql
@@ -41,7 +41,7 @@ Notre base de données SIFEV est composée de deux tables : Article et Categorie
 
   * Visualiser les détails
 
-###UPDATE
+### UPDATE
 
   * Formulaire
 
@@ -50,7 +50,7 @@ Notre base de données SIFEV est composée de deux tables : Article et Categorie
   UPDATE article SET title=:title, author=:author, date=:date, content=:content, url=:url WHERE id=:id;
   ```
 
-###DELETE
+### DELETE
 
  * Demande de confirmation
 
