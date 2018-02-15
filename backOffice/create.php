@@ -28,6 +28,7 @@ if (isset ($_POST['title'])  && isset($_POST['author']) && isset($_POST['date'])
 
 		</div>	
 		<div class="card-body">
+			<!-- echo a message to say the creation succeeded -->
 			<?php if(!empty($message)): ?>
        		<div class="alert alert-success">
           	<?= $message; ?>
