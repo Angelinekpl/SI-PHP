@@ -3,6 +3,7 @@
 	$sql = 'SELECT * FROM article';
 	$statement = $connection->prepare($sql);
 	$statement->execute();
+	// Fetch all the rows in the result set
 	$article = $statement->fetchAll(PDO::FETCH_OBJ);
 ?>
 
