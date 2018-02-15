@@ -19,6 +19,7 @@ Notre base de données SIFEV est composée de deux tables : Article et Categorie
   * category_name
 
 ## Sitemap
+![Dev Learn Site Map](https://www.zupimages.net/up/18/07/t2eg.png)
 
 ## CRUD
 
