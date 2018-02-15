@@ -50,8 +50,7 @@
         width: 100%;
         text-align: left;
         font: bold 16px 'Exo 2', sans-serif;
-        padding: 55px 50px;
-        margin-top: 80px;
+        padding: 55px 120px;
     }
 
     .footer-distributed .footer-left,

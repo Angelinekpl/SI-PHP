@@ -16,6 +16,7 @@ $statement2->execute();
     <link rel="stylesheet" type="text/css" href="../frontOffice/article.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Exo+2:700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
     <link rel="shortcut icon" href="https://www.favicon-generator.org/download/2018-02-13/012c7e07434b67601b79406ee0ea4d3a.ico" type="image/x-icon">
     <link rel="icon" href="https://www.favicon-generator.org/download/2018-02-13/012c7e07434b67601b79406ee0ea4d3a.ico" type="image/x-icon">
     <title>DevLearn - <?=$title?></title>
@@ -26,7 +27,7 @@ $statement2->execute();
 
     <div class="header-limiter">
 
-        <h1><a href="../frontOffice/main.php"><img src="../headerFooter/logo.png"></a></h1>
+        <h1><a href="../frontOffice/main.php"><img src="../headerFooter/logo.png" class="logo"></a></h1>
 
         <nav>
             <a href="../frontOffice/main.php">Home</a>
@@ -89,7 +90,7 @@ $statement2->execute();
     .header-fixed {
         background-color:#292c2f;
         box-shadow:0 1px 1px #ccc;
-        padding: 20px 40px;
+        padding: 15px 40px;
         height: 80px;
         color: #ffffff;
         box-sizing: border-box;
@@ -141,7 +142,7 @@ $statement2->execute();
 
     .header-fixed .header-limiter nav a{
         display: inline-block;
-        padding: 0 5px;
+        padding: 5px 5px;
         text-decoration:none;
         color: #ffffff;
         opacity: 0.9;
@@ -157,6 +158,10 @@ $statement2->execute();
         opacity: 1;
     }
 
+    .logo {
+        width: 40px;
+    }
+
     /* Fixed version of the header */
 
     body.fixed .header-fixed {
@@ -169,6 +174,10 @@ $statement2->execute();
         z-index: 1;
     }
 
+    body.fixed .logo {
+        width: 25px;
+    }
+
     body.fixed .header-fixed-placeholder {
         display: block;
     }
@@ -179,7 +188,7 @@ $statement2->execute();
     }
 
     body.fixed .header-fixed .header-limiter nav {
-        line-height: 28px;
+        line-height: 20px;
         font-size: 13px;
     }
 
@@ -190,7 +199,7 @@ $statement2->execute();
 
         .header-fixed {
             padding: 20px 0;
-            height: 75px;
+            height: 120px;
         }
 
         .header-fixed .header-limiter h1 {
