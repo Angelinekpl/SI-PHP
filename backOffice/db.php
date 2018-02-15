@@ -6,6 +6,7 @@ $password = '';
 $options = [];
 try {
 	$connection = new PDO($dsn, $username, $password, $options);
+	// set the PDO error mode to exception
 } catch(PDOException $e) {
 	echo $e->getMessage();
 }
