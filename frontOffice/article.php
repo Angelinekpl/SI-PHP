@@ -14,11 +14,13 @@ $content = $article['content'];
 
 <?php require '../headerFooter/headerFrontArticle.php' ?>
 
-
-<h1 class="title"><?=$title?></h1>
-<p class=""><?=$author?></p>
-<p class=""><?=$date?></p>
-    <a target="_blank" href="<?= $url ?>">Voir l'original</a>
-<p class=""><?=$content?></p>
-
+<div class="container">
+    <div class="content">
+        <h1 class="title"><?=$title?></h1>
+        <p class="author"><?=$author?></p>
+        <p class="date"><?=$date?></p>
+        <p class="articletxt"><?=$content?></p>
+        <a target="_blank" href="<?= $url ?>" class="fullArticle">Read the original</a>
+    </div>
+</div>
 <?php require '../headerFooter/footerFront.php' ?>

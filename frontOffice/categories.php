@@ -14,23 +14,25 @@ $category_name = $categories['category_name'];
 ?>
 
 <?php require '../headerFooter/headerFrontCategories.php' ?>
-
-<h1 class="title"><?=$category_name?></h1>
-
+<h1 class="cateTitle"><?=$category_name?></h1>
+<section class="licorne">
 <?php while(false !== $article = $statement->fetch(PDO::FETCH_ASSOC)) {
 
     $title = $article['title'];
     $author = $article['author'];
     $id = $article['id'];
+    $date = $article['date'];
     ?>
-
-    <h1 class="title"><?= $title ?></h1>
-    <p><?= $author ?></p>
-    <a href="article.php?id=<?= $id ?>">Lire</a>
-
-
+    <div class="container">
+        <div class="content">
+            <h1 class="title"><?= $title ?></h1>
+            <p class="author">by <?= $author ?></p>
+            <p class="date"><?=$date?></p>
+            <a href="article.php?id=<?= $id ?>" class="read">READ</a>
+        </div>
+    </div>
 <?php } ?>
-
+</section>
 
 
 
