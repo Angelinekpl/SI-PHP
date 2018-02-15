@@ -1,9 +1,11 @@
 <?php
 require '../backOffice/db.php';
+// Execute a prepared statement
 $id = $_GET['id'];
 $sql = 'SELECT * FROM article WHERE id=:id';
 $statement = $connection->prepare($sql);
 $statement->execute([':id' => $id ]);
+// Fetch the row in the result set
 $art = $statement->fetch(PDO::FETCH_OBJ);
 
 if (isset ($_POST['title'])  && isset($_POST['author']) && isset($_POST['date']) && isset($_POST['content']) && isset($_POST['url']) && isset($_POST['category_id']) ) {
