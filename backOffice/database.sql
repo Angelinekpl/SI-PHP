@@ -7,6 +7,7 @@ CREATE TABLE `SIFEV`.`article`(
     `date` DATE NOT NULL,
     `content` text NOT NULL,
     `url` VARCHAR(60) NOT NULL,
+    `category_id` INT(2) NOT NULL,
     PRIMARY KEY (`id`)
 );
 
